@@ -1,0 +1,77 @@
+/*
+If you want to customize to UI of individual objects, use this file.
+
+    Usage: To use these custom Sense Themes, just replace the tid string with the id of the Qlik Sense object you are wanting to change
+    Supported Objects: Straight Table, KPI
+
+    How to find an object's ID:
+        1. Go to a sheet with the object you want to change
+        2. Add options/developer to the end of your URL
+        3. Right click 'Developer'
+        4. Copy the Object ID 
+*/
+
+/***********************************/
+/******Custom Table Definition******/
+/***********************************/
+
+    /* Table Header */
+    [tid |= "ETvmXm"] th * { 
+        font-size:9px;
+    }
+
+    /* Table Body Content */
+    [tid |= "ETvmXm"] td * { 
+        padding:0px;
+        font-size:9px;
+    }
+
+
+
+/***********************************/
+/*******Custom KPI Definition*******/
+/***********************************/
+
+
+    /* KPI Header */
+    [tid |= "aVkLD"]  div.measure-wrapper * { 
+        font-size:30px;
+        font-weight: 700px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    [tid |= "aVkLD"]  div.value-wrapper.center * { 
+        font-size:14px !important;
+        font-weight: 700px !important;
+    }
+
+
+/***********************************/
+/***Custom Filter Pane Definition***/
+/***********************************/
+
+
+[tid |= "NnzQ"]  div.title-wrapper { 
+    color: white !important;
+    background-color: lightskyblue !important;
+}
+[tid |= "NnzQ"]  div.title-wrapper * { 
+    font-size:18px;
+    text-align: center !important;
+}
+[tid |= "NnzQ"]  div.qv-listbox-text * { 
+    font-size:9px;
+    text-align: center !important;
+}
+[tid |= "yLhNRn"]  div.title-wrapper { 
+    color: white !important;
+    background-color: lightcoral !important;
+}
+[tid |= "yLhNRn"]  div.title-wrapper * { 
+    font-size:18px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center !important;
+}
+[tid |= "yLhNRn"]  div.qv-listbox-text * { 
+    font-size:9px;
+    text-align: center !important;
+}
