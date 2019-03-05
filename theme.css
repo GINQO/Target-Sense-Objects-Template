@@ -75,3 +75,10 @@ If you want to customize to UI of individual objects, use this file.
     font-size:9px;
     text-align: center !important;
 }
+
+/* Example: Targetting all MultiKPI objects and applying font-family to them */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+div > div > div > div.statistic.statistic-1 > div > div > div.label > span {
+font-size: 20px !important;
+font-family: 'Indie Flower', cursive !important;
+}
