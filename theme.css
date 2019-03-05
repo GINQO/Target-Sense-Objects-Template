@@ -82,3 +82,8 @@ div > div > div > div.statistic.statistic-1 > div > div > div.label > span {
 font-size: 20px !important;
 font-family: 'Indie Flower', cursive !important;
 }
+
+/* Target all properties on sheet. Change font to Helvetica, if not available Arial. */
+#grid-wrap *:not(.fa):not(.lui-icon) {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
