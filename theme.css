@@ -87,3 +87,8 @@ font-family: 'Indie Flower', cursive !important;
 #grid-wrap *:not(.fa):not(.lui-icon) {
     font-family: Helvetica, Arial, sans-serif !important;
 }
+
+/* Target the selections bar on the page and hide it. */
+#qv-stage-container > div > div.qvt-selections.qv-panel-subtoolbar.qv-panel-current-selections.ng-scope.ng-isolate-scope.bright * {
+    visibility: hidden;
+}
